@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display the updated count</title>
+</head>
+<body>
+<!-- ------------------------------Task 2------------------------------------- -->
+    <h1>Display the updated count</h1>
+    <button id="countButton">Click </button>
+    <p id="countDisplay">Count: 0</p>
+
+
+
+    <script>
+        
+        const countButton = document.getElementById('countButton');
+        const countDisplay = document.getElementById('countDisplay');
+
+        let count = 0;
+
+        countButton.addEventListener('click', () => {
+            
+            count++;
+            countDisplay.textContent = `Count: ${count}`;
+        });
+    </script>
+</body>
+</html>

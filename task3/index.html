@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+
+
+    <!-- -----------------Task-3--------------------------- -->
+</head>
+<img id="image" src="../image/img3.jpg" width="400" height="300" alt="Image 1">
+<!-- <img id="image" src="../image/img1.jpg" width="400" height="300" alt="Image 1"> -->
+
+<button id="button1">Change to Image 1</button>
+<button id="button2">Change to Image 2</button>
+<body>
+
+    <script>
+        const imageElement = document.getElementById('image');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+    
+        button1.addEventListener('click', () => {
+            imageElement.src = '../image/img1.jpg';
+        });
+    
+        button2.addEventListener('click', () => {
+            imageElement.src = '../image/img2.jpg';
+        });
+    </script>
+    
+    </body>
+    </html>
+
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

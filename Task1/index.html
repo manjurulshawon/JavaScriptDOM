@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dom Manupulation</title>
+</head>
+<body>
+<!-- Task-1 -->
+
+<button id="myButton">Click me</button>
+<div id="myDiv"> content.</div>
+
+<script>
+    
+    const button = document.getElementById('myButton');
+    const div = document.getElementById('myDiv');
+    
+    button.addEventListener('click', function() {
+        div.innerHTML = 'Manjurul Islam Shawon !😊';
+    });
+</script>
+
+</body>
+</html>
